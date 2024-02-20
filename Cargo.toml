@@ -1,0 +1,15 @@
+[package]
+name = "acala-repro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hex = "0.4"
+sp-core = { version = "29.0", default-features = false, features = [
+  "full_crypto",
+  "serde",
+] }
+sp-storage = { version = "20.0", default-features = false, features = [
+  "serde",
+] }
+subxt-metadata = "0.34.0"
